@@ -1,0 +1,7 @@
+---
+- hosts: NUC
+  remote_user: adwait
+  sudo: yes
+  tasks:
+    - name: run docker containers
+      docker: image=nuagebec/ubuntu name=testcontainer1 command=/bin/bash
