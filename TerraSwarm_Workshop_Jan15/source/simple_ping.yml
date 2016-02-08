@@ -1,6 +1,0 @@
----
-- hosts: NUC
-  remote_user: adwait
-  tasks:
-  - name: test connection
-    ping:

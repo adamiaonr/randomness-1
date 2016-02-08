@@ -1,7 +1,0 @@
----
-- hosts: NUC
-  remote_user: adwait
-  sudo: yes
-  tasks:
-  - name: restart
-    command: /sbin/shutdown -r now

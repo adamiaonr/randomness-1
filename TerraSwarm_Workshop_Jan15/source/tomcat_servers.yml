@@ -1,8 +1,0 @@
----
-- hosts: NUC
-  remote_user: adwait
-  sudo: yes
-  tasks:
-  - name: run tomcat servers
-    docker: image=centos name={{item}} command="service tomcat6 start" ports=8080 state=running
-    with_sequence: start=1 end=5 format=server%d
